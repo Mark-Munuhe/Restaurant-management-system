@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Mark Munuhe" />
+    <meta
+      name="description"
+      content="This page contains everything i'm learning about html"
+    />
+    <title>My first web page</title>
+    <link rel="icon" href="img/logo.jpg" type="image/jpg" />
+    <link rel="stylesheet" href="main.css" type="text/css" />
+  </head>
+  <body>
+    <section id="Back-to-top">
+      <header>
+        <h1>My Goals For This Long Holiday!</h1>
+        <hr />
+        <nav>
+          <ul>
+            <li><a href="#html">Learning HTML</a></li>
+            <li><a href="#vacation">Planning a vacation</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+          </ul>
+        </nav>
+      </header>
+    </section>
+    <hr />
+    <main>
+      <article id="html">
+        <h2>I'm ready to learn HTML</h2>
+        <p>This is my first HTML code.</p>
+        <section>
+          <h3>HTML 5</h3>
+          <div style="display: flex; align-items: center; gap: 16px">
+            <img
+              src="img/logo.jpg"
+              alt="The HTML logo"
+              title="Html logo"
+              width="300"
+              height="500"
+              loading="lazy"
+            />
+
+            <figure style="margin: 0">
+              <figcaption>An example of a HMTL code</figcaption>
+              <p>
+                <code>&lt;h1&gt;Hello World!&lt;/h1&gt;</code>
+              </p>
+            </figure>
+          </div>
+        </section>
+      </article>
+      <h3>My Daily schedule</h3>
+      Let me tell you how:
+      <ol>
+        <li>.....I learn more about web dev.</li>
+        <li>.....I plan out my schedule</li>
+        <li>
+          .....I use resources from
+          <abbr title="Mozilla Developer network">
+            <a href="https://developer.mozilla.org">MDN</a>
+          </abbr>
+        </li>
+      </ol>
+      <aside>
+        <details>
+          <summary>
+            Guess the <mark>number of hours</mark> I code per day
+          </summary>
+          <p>
+            I start at <time datetime="08:00">8 am</time> and code for three
+            hours every morning.
+          </p>
+          <br />
+          <table>
+            <caption>
+              My Daily Schedule
+            </caption>
+            <thead>
+              <tr>
+                <th>&nbsp;</th>
+                <th scope="col">Time</th>
+                <th scope="col">Activity</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <th scope="row">Morning</th>
+                <td>
+                  <time datetime="08:00">8am</time>-<time datetime="11:00"
+                    >11am</time
+                  >
+                </td>
+                <td>Write Code</td>
+              </tr>
+              <tr>
+                <th scope="row">Break</th>
+                <td>
+                  <time datetime="11:00">11am</time>-<time datetime="12:00"
+                    >12pm</time
+                  >
+                </td>
+                <td>Eat Lunch</td>
+              </tr>
+              <tr>
+                <th scope="row">Afternoon</th>
+                <td>
+                  <time datetime="12:00">12pm</time>-<time datetime="17:00"
+                    >5pm</time
+                  >
+                </td>
+                <td>Study for other Courses</td>
+              </tr>
+              <tr>
+                <th scope="row">Evening</th>
+                <td rowspan="2">All Other Times</td>
+                <td>Free Time</td>
+              </tr>
+              <tr>
+                <th scope="row">Night</th>
+                <td>Sleep</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td colspan="3">
+                  And that's what i do everyday, five days a weeek.
+                  Eat,sleep,code,repeat.
+                </td>
+              </tr>
+            </tfoot>
+          </table>
+        </details>
+      </aside>
+      <hr />
+
+      <article id="vacation">
+        <h2>I am also planning a vacation</h2>
+        <p>
+          I want to take a vacation after i'm done with my
+          <abbr title="Hypertext Markup Language">HTML</abbr> course
+        </p>
+        <hr />
+        <!--Add more places-->
+        <h3>Places i'd like to visit</h3>
+        <ul>
+          <li>
+            <p>I've always wanted to visit the <em>The Seychelles</em></p>
+            <figure>
+              <img
+                src="img/seychelles.jpeg"
+                alt="The Seychelles"
+                title="The Seychelles"
+                width="700"
+                height="500"
+                loading="lazy"
+              />
+              <figcaption>Seychelles Beach Getaway</figcaption>
+            </figure>
+          </li>
+          <li>
+            I'd also love to visit the <strong>The Porsche Museum</strong>
+            <figure>
+              <img
+                src="img/classic.jpeg"
+                alt="Porsche"
+                title="Porsche Museum"
+                width="337"
+                height="600"
+                loading="lazy"
+              />
+              <figcaption>The Porsche Museum</figcaption>
+            </figure>
+          </li>
+          <li>
+            <p>Anywhere cold <strong>No Way!</strong></p>
+          </li>
+        </ul>
+        <h3>Places i'd like to avoid</h3>
+        <dl>
+          <dt>Turkana</dt>
+          <dd>I hear it is very <strong>Dry</strong></dd>
+          <dt>Wajir</dt>
+          <dd>There are some wars going on</dd>
+        </dl>
+      </article>
+      <hr />
+      <article id="contact">
+        <h2>Contact Me</h2>
+        <p>I'd really like to hear from you</p>
+        <form action="https://httpbin.org/get" method="get">
+          <fieldset>
+            <legend>Personal</legend>
+            <label for="firstName">First Name:</label>
+            <input
+              type="text"
+              name="firstName"
+              id="firstName"
+              placeholder="Enter Your Name"
+              autocomplete="on"
+              required="true"
+              autofocus
+              style="text-transform: capitalize"
+              onkeydown="if(event.key==='Enter'){event.preventDefault();document.getElementById('lastName').focus();}"
+            />
+            <br />
+
+            <label for="lastName">Last Name:</label>
+            <input
+              type="text"
+              name="lastName"
+              id="lastName"
+              placeholder="Enter Last Name"
+              autocomplete="on"
+              required="true"
+              style="text-transform: capitalize"
+              onkeydown="if(event.key==='Enter'){event.preventDefault();document.getElementById('email').focus()}"
+            />
+
+            <br />
+
+            <label for=" email">email:</label>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input
+              type="text"
+              name="email"
+              id="email"
+              placeholder="Enter email"
+              autocomplete="on"
+              required="true"
+              onkeydown="if(event.key==='Enter'){event.preventDefault();document.getElementById('password').focus()}"
+            />
+
+            <br />
+
+            <label for="password">Password:</label>
+            <input
+              type="password"
+              name="password"
+              id="password"
+              required
+              placeholder="Your password"
+              onkeydown="if(event.key==='Enter'){event.preventDefault();document.getElementById('phone').focus()}"
+            />
+
+            <br />
+
+            <label for="Phone number">Phone number</label>
+            <input
+              type="tel"
+              name="phone"
+              id="phone"
+              placeholder="xxxxxxxxxx"
+              pattern="[0-9]{4}[0-9]{3}[0-9]{3}"
+              onkeydown="if(event.key==='Enter'){event.preventDefault();document.getElementById('decade').focus()}"
+            />
+            <br />
+            <label for="decade">Favourite Decade:</label>
+            <input
+              type="number"
+              name="decade"
+              id="decade"
+              min="1950"
+              max="2050"
+              step="10"
+              value="1980"
+              onkeydown="if(event.key==='Enter'){event.preventDefault();document.getElementById('coffee').focus();}"
+            />
+            <br />
+            <label for="coffee">Favourite Coffee:</label>
+            <select name="coffee" id="coffee">
+              <option value="" disabled selected>Choose</option>
+              <optgroup label="Coffees">
+                <option value="regular coffee">Regular Coffee</option>
+                <option value="iced coffee">Iced Coffee</option>
+              </optgroup>
+              <optgroup label="Espresso Drinks">
+                <option value="cappuccino">Cappuccino</option>
+                <option value="latte">Latte</option>
+                <option value="americano">Americano</option>
+              </optgroup>
+              <option value="other">Other</option>
+            </select>
+
+            <!-- <label for="coffee">Favourite Coffee:</label>
+          <input type="text" name="coffee" id="coffee" list="coffee-list" />
+          <datalist id="coffee-list">
+            <option value="coffee"></option>
+            <option value="latte"></option>
+            <option value="espresso"></option>
+            <option value="cortado"></option>
+            <option value="americano"></option>
+            <option value="other"></option>
+          </datalist> -->
+          </fieldset>
+          <h2>Tell us about yourself</h2>
+
+          <br />
+          <fieldset>
+            <legend>What is your favourite food</legend>
+            <p>
+              <input type="radio" name="food" id="tacos" value="tacos" />
+              <label for="tacos">Tacos</label>
+            </p>
+            <p>
+              <input type="radio" name="food" id="pizza" value="pizza" />
+              <label for="pizza">Pizza</label>
+            </p>
+            <p>
+              <input type="radio" name="food" id="githeri" value="githeri" />
+              <label for="githeri">Githeri</label>
+            </p>
+            <p>
+              <input type="radio" name="food" id="ugali" value="ugali" />
+              <label for="ugali">Ugali</label>
+            </p>
+            <p>
+              <input
+                type="radio"
+                name="food"
+                id="other-food"
+                value="other-food"
+              />
+              <label for="other-food">Other</label>
+            </p>
+          </fieldset>
+          <br />
+          <fieldset>
+            <legend>Which pets do you have</legend>
+            <p>
+              <input type="checkbox" name="pets" id="dog" value="dog" />
+              <label for="dog">Dog</label>
+            </p>
+            <p>
+              <input type="checkbox" name="pets" id="cat" value="cat" />
+              <label for="cat">Cat</label>
+            </p>
+            <p>
+              <input type="checkbox" name="pets" id="fish" value="fish" />
+              <label for="fish">Fish</label>
+            </p>
+            <p>
+              <input type="checkbox" name="pets" id="snake" value="snake" />
+              <label for="snake">Snake</label>
+            </p>
+            <p>
+              <input
+                type="checkbox"
+                name="pet"
+                id="other-pet"
+                value="other-pet"
+              />
+              <label for="other-pet">Other</label>
+            </p>
+          </fieldset>
+          <fieldset>
+            <legend>Send me a note</legend>
+            <label for="message">Your Message:</label>
+            <br />
+            <textarea
+              name="message"
+              id="message"
+              cols="30"
+              rows="10"
+              placeholder="Type your message here"
+            >
+            </textarea>
+          </fieldset>
+          <br />
+          <button type="submit">Submit</button>
+          <br />
+          <button type="reset">Reset</button>
+        </form>
+      </article>
+    </main>
+    <hr />
+    <footer>
+      <p>
+        &lt;&lt;&lt;&lt;&lt;&copy;<a href="about.html">Mark Munuhe</a
+        >&gt;&gt;&gt;&gt;&gt;
+      </p>
+      <nav>
+        <a href="#">Back to top</a>
+      </nav>
+    </footer>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
